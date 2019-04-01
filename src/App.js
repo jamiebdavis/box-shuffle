@@ -14,10 +14,6 @@ class App extends Component {
   };
 
   shuffle = () => {
-    // TODO: using react state, shuffle .box's to
-    // new positions within .box-container and update
-    // labels
-
     let redBox = this.state.redBox;
     redBox.top = Math.floor(Math.random() * 250);
     redBox.left = Math.floor(Math.random() * 250);

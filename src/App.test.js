@@ -18,7 +18,7 @@ describe("<App />", () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find(".box-container")).toHaveLength(1);
   });
-  it("renders 2 .box`containers", () => {
+  it("renders 2 .boxes", () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find(".box")).toHaveLength(2);
   });

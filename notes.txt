@@ -1,0 +1,9 @@
+ 1. perform TODO item in Boxes#shuffle method
+
+ 2. what can be done to make this more reusable
+    as a component?
+    
+ 3. what can be done to turn this into a
+    production-ready product for sale?
+    
+ */

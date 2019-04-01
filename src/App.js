@@ -19,14 +19,14 @@ class App extends Component {
     // labels
 
     let redBox = this.state.redBox;
-    redBox.top = Math.floor(Math.random() * 300);
-    redBox.left = Math.floor(Math.random() * 300);
+    redBox.top = Math.floor(Math.random() * 250);
+    redBox.left = Math.floor(Math.random() * 250);
 
     this.setState({ redBox });
 
     let blueBox = this.state.blueBox;
-    blueBox.top = Math.floor(Math.random() * 300);
-    blueBox.left = Math.floor(Math.random() * 300);
+    blueBox.top = Math.floor(Math.random() * 250);
+    blueBox.left = Math.floor(Math.random() * 250);
 
     this.setState({ blueBox });
   };
@@ -35,12 +35,24 @@ class App extends Component {
     return (
       <div className="container">
         <div className="box-container">
-          <div className="box red">
+          <div
+            className="box red"
+            style={{
+              left: this.state.redBox.left,
+              top: this.state.redBox.top
+            }}
+          >
             <span className="box-label">
               left: {this.state.redBox.left} top: {this.state.redBox.top}
             </span>
           </div>
-          <div className="box blue">
+          <div
+            className="box blue"
+            style={{
+              left: this.state.blueBox.left,
+              top: this.state.blueBox.top
+            }}
+          >
             <span className="box-label">
               left: {this.state.blueBox.left} top: {this.state.blueBox.top}
             </span>

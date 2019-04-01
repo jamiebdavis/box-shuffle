@@ -11,9 +11,9 @@ Questions:
 
     The app could be broken down into seperate components.
 
-    - <BoxContainer />
-    - <Box />
-    - <Button />
+    - BoxContainer
+    - Box
+    - Button
 
 3.  what can be done to turn this into a
     production-ready product for sale?
